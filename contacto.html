@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Pagina que aun no sabemos de que</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu">
+          <img src="img/menu.svg" alt="" />
+          <div class="dropdown">
+            <ul>
+              <li>
+                Categoria 1
+                <ul>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="productos.html">Suscripciones</a></li>
+                  <li>SubCategoria 3<a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                Categoria 2
+                <ul>
+                  <li>SubCategoria 1<a href="#"></a></li>
+                  <li>SubCategoria 2<a href="#"></a></li>
+                  <li>SubCategoria 3<a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                Categoria 3
+                <ul>
+                  <li>SubCategoria 1<a href="#"></a></li>
+                  <li>SubCategoria 2<a href="#"></a></li>
+                  <li>SubCategoria 3<a href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo"><a href="/">Tienda online</a></div>
+        <div class="sesion">
+          <img src="img/login.jpg" alt="" />
+        </div>
+      </nav>
+    </header>
+    <div class="main_container">
+      <main>
+        <h1>
+          Rellena este formulario una vez adquirida la suscripcion y empecemos a
+          trabajar
+        </h1>
+
+        <form action="" method="post">
+          <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required />
+            <label for="surname">Apellidos</label>
+            <input type="text" name="surname" id="surname" required />
+            <label for="phone">Telefono</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="+34666666666"
+              required
+            />
+            <label for="mail">Coreo lectrónico</label>
+            <input type="email" name="mail" id="mail" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Hablame de tus entrenamientos</legend>
+            <label for="training_days"
+              >¿Cuantos dias a la semana entrenas o quieres entrenar?</label
+            >
+            <select name="training_days" id="training_days">
+              <option value="">--Elige una opción--</option>
+              <option value="2">2</option>
+              <option value="3-4">3-4</option>
+              <option value="5-6">5-6</option>
+            </select>
+            <label for="training_place">¿Donde entrenas?</label>
+            <select name="training_place" id="training_place">
+              <option value="">--Elige una opción--</option>
+              <option value="gym">Gimnasio</option>
+              <option value="crossfit">Box de crossfit</option>
+              <option value="home">En casa</option>
+              <option value="calistenia">Parque de calistenia</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Y de tu nutricion</legend>
+            <span>Tipo de dieta que quieres seguir</span>
+            <ul>
+              <li>
+                <input type="radio" name="diet" id="omnivora" />
+                <label for="omnivora">Omnivora</label>
+              </li>
+              <li>
+                <input type="radio" name="diet" id="vegetariana" />
+                <label for="vegetariana">Vegetariana</label>
+              </li>
+              <li>
+                <input type="radio" name="diet" id="vegana" />
+                <label for="vegana">Vegana</label>
+              </li>
+            </ul>
+
+            <span>¿Alguna alergia o intolerancia?</span>
+
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="alergies[]"
+                  value="eggs"
+                  id="eggs"
+                /><label for="eggs">Huevos</label>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  name="alergies[]"
+                  value="dairy"
+                  id="dairy"
+                /><label for="dairy">Lácteos</label>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  name="alergies[]"
+                  value="seafood"
+                  id="seafood"
+                /><label for="seafood">Marisco</label>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  name="alergies[]"
+                  value="dried_fruits"
+                  id="dried_fruits"
+                /><label for="dried_fruits">Frutos secos</label>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  name="alergies[]"
+                  value="guten"
+                  id="guten"
+                /><label for="guten">Glúten</label>
+              </li>
+
+              <li>
+                <label for="other">Otros</label>
+                  <input type="text" name="alergies[]" id="other"/>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>¿Lesiones o limitaciones en peso / movimiento?</legend>
+            <label for="lesiones">Pon todo lo necesario, no te cortes</label>
+            <input type="text" name="lesiones" id="lesiones">
+
+
+            <label for="parte_medico">Adjunta un parte medico si lo consideras</label>
+            <input type="file" name="parte_medico[]" multiple id="" accept=".pdf">
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="contacto">  
+        <span>Contacto</span>
+        <span class="tlf">+34999888777</span>
+        <span class="web">dominio.com</span>
+        <span>Direccion inventada</span>
+      </div>
+
+      <div class="privacidad">
+        <a href="">Politica de privacidad</a>
+        <a href="">Terminos y condiciones</a>
+      </div>
+
+    </footer>
+  </body>
+  </body>
+</html>

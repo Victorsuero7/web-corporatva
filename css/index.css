@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  /* color: white; */
+  /* background-color: rgb(51, 51, 51); */
+}
+
+/* header *:not(.dropdown *) {
+  color: black;
+  background-color: orange;
+  } */
+  header a{
+    text-decoration: none;
+    color: inherit;
+  }
+  p,
+  a {
+    font-size: x-large;
+  }
+  
+  main {
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  body {
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(255, 166, 0, 0.2));
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main_container {
+  padding: 40px 0;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+}
+
+.menu > img,
+nav img {
+  width: 50px;
+  padding: 0 5px;
+}
+
+.logo {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  align-content: center;
+}
+
+.menu {
+  /* background-color: orange; */
+  top: 0;
+  left: 0;
+  width: fit-content;
+}
+
+.menu:hover img {
+  visibility: hidden;
+  /* width: 10%; */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  height: max-content;
+  min-height: 50%;
+  width: 80%;
+  max-width: 550px;
+  background-color: rgb(200, 200, 200);
+}
+
+.menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown:hover > ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header ul ul {
+  display: none;
+}
+
+.dropdown > ul > li:hover {
+  border-bottom: 2px solid orange;
+  border-top: 2px solid orange;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown > ul > li {
+  padding: 20px;
+}
+
+header ul > li:hover ul {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+header li ul li {
+  background-color: rgb(150, 150, 150);
+  color: white;
+  border-bottom: 2px solid orange;
+  /* padding: 20px; */
+}
+
+header li {
+  padding: 20px 30px;
+  list-style: none;
+  width: 100%;
+}
+header li:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.footer {
+  background-color: grey;
+  color: white;
+  min-height: 50px;
+}
+
+main {
+  width: 100%;
+  /* min-width: 430px; */
+  max-width: 1250px;
+}
+article {
+  width: 100%;
+  /* height: 400px; */
+  /* background-color: aqua; */
+  font-size: large;
+  padding: 10px;
+  text-align: left;
+}
+
+main article h2 {
+  padding: 30px 0 10px 20px;
+}
+
+aside {
+  margin: 30px 0;
+  /* width: 50%; */
+  /* min-width: 200px; */
+  max-width: 500px;
+  height: fit-content;
+  width: fit-content;
+  background-color: rgb(180, 180, 180);
+}
+.recomended {
+  padding: 10px;
+  text-align: center;
+}
+
+.articulo_blog {
+  /* background-color: aqua;
+  border: 2px solid yellow; */
+  overflow-wrap: break-word;
+  border: 2px solid orange;
+  margin: 2px;
+}
+
+.articulo_blog a {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.articulo_blog img {
+  width: 50%;
+  aspect-ratio: 1.6/1;
+}
+
+/* --------------- Productos ------------- */
+.coleccion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 400px;
+  height: 700px;
+  gap: 40px;
+  border: 2px solid grey;
+  border-radius: 22px;
+  background-color: rgb(202, 202, 202);
+  /* transform-style: preserve-3d; */
+  /* background-color: red; */
+  /* position: relative; */
+  /* display: block; */
+}
+
+.productos ul {
+  /* display: block; */
+  list-style: none;
+  text-align: left;
+  /* position: relative; */
+}
+.productos ul li {
+  padding: 15px;
+}
+.productos button {
+  width: 100%;
+  height: 70px;
+  background-color: none;
+  color: rgb(2, 2, 2);
+  font-size: 30px;
+  margin-bottom: 40px;
+  border-radius: 22px;
+  border: none;
+}
+
+.productos:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  /* transform: rotateY(15deg); */
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  /* overflow: hidden; */
+}
+.productos:hover button {
+  background-color: orange;
+  color: black;
+}
+
+.faqs h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.faqs {
+  padding: 90px 0;
+  text-align: left;
+}
+
+details p {
+  font-size: 20px;
+  padding: 5px;
+}
+details {
+  /* padding: 50px 0; */
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+summary {
+  font-weight: bold;
+}
+
+details > summary {
+  list-style-type: "+";
+}
+
+summary::marker {
+  background-color: orange;
+}
+
+details[open] > summary {
+  list-style-type: "-";
+}
+
+details[open] {
+  background-color: rgba(128, 128, 128, 0.37);
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+/* Sacado de la documentacion de mozilla mdn */
+details summary::marker,
+:is(::-webkit-details-marker) {
+  content: "+ ";
+  color: orange;
+  font-weight: bold;
+}
+
+details[open] summary::marker {
+  content: "− ";
+}
+
+/* -------------------- Formulario -------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+}
+span {
+  padding: 15px 0 10px 0;
+}
+
+legend {
+  text-align: center;
+  padding: 0px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 5px;
+  accent-color: orange;
+}
+
+input,
+select {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 14px;
+}
+
+form fieldset:nth-child(even) {
+  border: 3px solid orange;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 10px 0;
+}
+form fieldset:nth-child(odd) {
+  border: 3px solid orange; 
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 0 10px;
+}
+
+form button{
+  width: 50%;
+  height: 40px;
+  background-color: none;
+  color: rgb(2, 2, 2);
+  font-size: 30px;
+  margin-bottom: 40px;
+  border-radius: 22px;
+  border: none;
+  background-color: orange;
+  color: black;
+}
+
+
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .contacto, footer .privacidad{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacidad a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px
+}
